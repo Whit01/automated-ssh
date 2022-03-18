@@ -3,6 +3,10 @@ var cheerio = require("cheerio");
 
 
 //hello
+var totalCount = 0;
+var totalCountWQuant = 0;
+var duration = 2;
+for (var tc = 0; tc <= duration; tc++) {
 var url;
 var finalList = [];
 var num = -1;
@@ -19,7 +23,7 @@ var backtesting = false;
 var low;
 var high;
 var finalStocks = [];
-var day = 0;
+var day = i;
 var earnings;
 var total = 0;
 counting1 = 0;
@@ -220,21 +224,17 @@ var plusdays = 0;
                 if (upOrDown == "down") {
                     if (openings2 > low * 1.0055) {
                         console.log("+0.5%");
-                        console.log(openings2 - high);
                     }
                     else {
                         console.log("Less than 0.5%");
-                        console.log(openings2 - high);
                     }
                 }
                 else {
                     if (openings2 * 1.0055 < high) {
                         console.log("+0.5%");
-                        console.log(openings2 - high);
                     }
                     else {
                         console.log("Less than 0.5%");
-                        console.log(openings2 - high);
                     }
                 }
             }
@@ -297,21 +297,17 @@ if (day5 <= 0.2 && day10 <= 0.4) {
                     if (upOrDown == "down") {
                         if (openings2 > low * 1.0055) {
                             console.log("+0.5%");
-                            console.log(openings2 - high);
                         }
                         else {
                             console.log("Less than 0.5%");
-                            console.log(openings2 - high);
                         }
                     }
                     else {
                         if (openings2 * 1.0055 < high) {
                             console.log("+0.5%");
-                            console.log(openings2 - high);
                         }
                         else {
                             console.log("Less than 0.5%");
-                            console.log(openings2 - high);
                         }
                     }
                 }
@@ -339,3 +335,6 @@ num++;
 
 var aroonRed;
 var aroonGreen;
+totalCount += total;
+totalCountWQuant = (totalCountWQuant * (tc + 1) + (total/quantity)) / (tc + 2);
+}
