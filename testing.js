@@ -23,7 +23,7 @@ var backtesting = false;
 var low;
 var high;
 var finalStocks = [];
-var day = i;
+var day = tc;
 var earnings;
 var total = 0;
 counting1 = 0;
