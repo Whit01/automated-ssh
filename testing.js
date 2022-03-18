@@ -31,9 +31,7 @@ for (var a = 0; a < stocks.length - 1; a++) {
 
         url = "https://finance.yahoo.com/quote/" + stocks[a] + "/history?p=" + stocks[a];
 request(url, a, function(err, response, html)  {
-    if (counting1 % 100 == 0) {
         console.log("Request...");
-    }
     counting1++;
     prevent = 0;
     
