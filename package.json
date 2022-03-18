@@ -1,0 +1,19 @@
+{
+  "name": "automated-ssh",
+  "version": "1.0.0",
+  "description": "Node webscraping",
+  "main": "testing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Whit01/automated-ssh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Whit01/automated-ssh/issues"
+  },
+  "homepage": "https://github.com/Whit01/automated-ssh#readme"
+}
