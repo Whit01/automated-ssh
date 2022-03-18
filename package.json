@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Whit01/automated-ssh/issues"
   },
-  "homepage": "https://github.com/Whit01/automated-ssh#readme"
+  "homepage": "https://github.com/Whit01/automated-ssh#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }
